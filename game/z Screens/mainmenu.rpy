@@ -25,8 +25,8 @@ screen main_menu():
 
         if persistent.yandere_menu_enabled == "easteregg": 
 
-            textbutton _("No Privacy") action OpenURL("https://sites.google.com/view/privacy-policy-tyfl/home") xalign 0.98 yalign 0.92
-            textbutton _("Terms of Relationship") action OpenURL("https://sites.google.com/view/terms-of-use-tyfl/home") xalign 0.98 yalign 0.98
+            textbutton _("No Privacy") action OpenURL("https://secludedwolfhq.wordpress.com/privacy-policy/") xalign 0.98 yalign 0.92
+            textbutton _("Terms of Relationship") action OpenURL("https://secludedwolfhq.wordpress.com/terms-of-use/") xalign 0.98 yalign 0.98
 
             text "{color=#ff54e2}{size=+10}v9.9.9" xalign 0.02 yalign 0.98
 
@@ -35,8 +35,8 @@ screen main_menu():
             if persistent.game_finished_once:
                 textbutton _("Cheats") action [Function(play_click_sound), Show("cheats1")] xalign 0.98 yalign 0.86
             
-            textbutton _("Privacy Policy") action OpenURL("https://sites.google.com/view/privacy-policy-tyfl/home") xalign 0.98 yalign 0.92
-            textbutton _("Terms of Use") action OpenURL("https://sites.google.com/view/terms-of-use-tyfl/home") xalign 0.98 yalign 0.98
+            textbutton _("Privacy Policy") action OpenURL("https://secludedwolfhq.wordpress.com/privacy-policy/") xalign 0.98 yalign 0.92
+            textbutton _("Terms of Use") action OpenURL("https://secludedwolfhq.wordpress.com/terms-of-use/") xalign 0.98 yalign 0.98
 
             text "{color=#ff54e2}{size=+10}v[config.version]" xalign 0.02 yalign 0.98
 
@@ -47,7 +47,7 @@ screen main_menu():
 
             imagebutton idle localized_asset_path("images/Source Code/{folder}/Source Code Idle {code}.webp") hover localized_asset_path("images/Source Code/{folder}/Source Code Hover {code}.webp") action [Function(play_click_sound), Show("source_code_spoiler_warning")]
 
-            imagebutton idle "images/YouTube Idle.webp" hover "images/YouTube Hover.webp" action [Function(play_click_sound), OpenURL("https://www.youtube.com/@TTG_Games_Official/")] xalign 0.5
+            imagebutton idle "images/YouTube Idle.webp" hover "images/YouTube Hover.webp" action [Function(play_click_sound), OpenURL("https://www.youtube.com/@SecludedWolfHQ/")] xalign 0.5
             imagebutton idle "images/Discord Idle.webp" hover "images/Discord Hover.webp" action [Function(play_click_sound), OpenURL("https://discord.gg/pT9e9exeES")] xalign 0.5
     
     frame:

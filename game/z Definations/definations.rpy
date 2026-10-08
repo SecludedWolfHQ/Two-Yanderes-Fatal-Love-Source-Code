@@ -226,7 +226,7 @@ define config.has_voice = False
 
 define config.name = _("Two Yanderes & Fatal Love")
 define gui.show_name = False
-define config.version = "3.4.3"
+define config.version = "3.4.4"
 
 define config.image_cache_size_mb = 512
 define config.gl2 = True

@@ -1,6 +1,6 @@
 # 📜 Custom Educational & Commercial Use License
 
-Copyright © 2026 TTG Games. All rights reserved.
+Copyright © 2026 SecludedWolf Interactive. All rights reserved.
 
 This license applies to the selected source files and documentation made available in this repository (the "Repository").
 
@@ -59,7 +59,7 @@ This restriction includes, but is not limited to:
 
 Game Content remains protected even if it appears incidentally inside an `.rpy` file or another file in the Repository.
 
-All rights to the Game Content are reserved by TTG Games.
+All rights to the Game Content are reserved by SecludedWolf Interactive.
 
 ## 5. NO ASSET OR TRADEMARK RIGHTS GRANTED
 
@@ -71,7 +71,7 @@ This license also does not grant permission to use the name *Two Yanderes & Fata
 
 ## 6. ATTRIBUTION
 
-Attribution to TTG Games is appreciated but is not required when permitted portions of the Code are integrated into an original project.
+Attribution to SecludedWolf Interactive is appreciated but is not required when permitted portions of the Code are integrated into an original project.
 
 You may not claim authorship of unmodified Code taken directly from this Repository.
 

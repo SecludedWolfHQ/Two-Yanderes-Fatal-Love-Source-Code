@@ -360,7 +360,7 @@ screen source_code_spoiler_warning():
                 xalign 0.5
                 spacing 200
 
-                textbutton _("YES") action [Function(play_click_sound), Hide("source_code_spoiler_warning"), OpenURL("https://github.com/TTG-Games-Official/Two-Yanderes-Fatal-Love-Source-Code")]
+                textbutton _("YES") action [Function(play_click_sound), Hide("source_code_spoiler_warning"), OpenURL("https://github.com/SecludedWolfHQ/Two-Yanderes-Fatal-Love-Source-Code")]
                 textbutton _("NO") action [Function(play_click_sound), Hide("source_code_spoiler_warning")]
 
     key "K_RETURN" action Hide("source_code_spoiler_warning")
