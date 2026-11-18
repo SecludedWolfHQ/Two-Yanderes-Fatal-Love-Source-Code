@@ -3,7 +3,7 @@ init python:
     stats_destiny_texts = {
 
         # Active
-        "suspended_true": _("- Akira and [player] have been temporarly suspended\nfrom school."),
+        "suspended_true": _("- Akira and [player] have been temporarily suspended\nfrom school."),
         "suspended_false": _("- Akira and [player] managed to avoid getting suspended\nfrom school."),
         "caught_blood": _("- Akira and [player] were caught by the guidance\ncounselor covered in blood."),
         "caught_insane": _("- Akira and [player] were caught by the guidance\ncounselor insane."),
@@ -15,7 +15,7 @@ init python:
         "destroy_false": _("- Akira and [player] chose to clean the blood from the\nevidence."),
         
         # Done
-        "suspended_truedone": _("{color=#959595}- Akira and [player] have been temporarly suspended\nfrom school. (Done)"),
+        "suspended_truedone": _("{color=#959595}- Akira and [player] have been temporarily suspended\nfrom school. (Done)"),
         "suspended_falsedone": _("{color=#959595}- Akira and [player] managed to avoid getting suspended\nfrom school. (Done)"),
         "caught_blood_done": _("{color=#959595}- Akira and [player] were caught by the guidance counselor\ncovered in blood. (Done)"),
         "caught_insane_done": _("{color=#959595}- Akira and [player] were caught by the guidance counselor\ninsane. (Done)"),

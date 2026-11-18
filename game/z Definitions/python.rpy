@@ -374,7 +374,9 @@ init python:
 
     def stop_music(fadeout=0):
         global current_dynamic_music
+        global dynamic_music_volume
         current_dynamic_music = None
+        dynamic_music_volume = 1.0
 
         renpy.music.stop(channel="hsanity", fadeout=fadeout)
         renpy.music.stop(channel="msanity", fadeout=fadeout)
@@ -841,7 +843,7 @@ init python:
     config.interact_callbacks.append(monitoring_skip)
 
 
-# Sanity Releated Functions
+# Sanity Related Functions
 init python:
 
     def sanity_mode(mode, delay=0.5): # This function mutes or unmutes the music channels according to the main character's sanity.
@@ -861,7 +863,7 @@ init python:
 
             sanity_mod = "low"
 
-            renpy.music.set_volume(1.0, delay=delay, channel='lsanity') # Low Sanity
+            renpy.music.set_volume(dynamic_music_volume, delay=delay, channel='lsanity') # Low Sanity
             renpy.music.set_volume(0.0, delay=delay * 4, channel='msanity') # Medium Sanity
             renpy.music.set_volume(0.0, delay=delay * 4, channel='hsanity') # High Sanity
 
@@ -869,7 +871,7 @@ init python:
 
             sanity_mod = "medium"
 
-            renpy.music.set_volume(1.0, delay=delay, channel='msanity') # Medium Sanity
+            renpy.music.set_volume(dynamic_music_volume, delay=delay, channel='msanity') # Medium Sanity
             renpy.music.set_volume(0.0, delay=delay * 4, channel='lsanity') # Low Sanity
             renpy.music.set_volume(0.0, delay=delay * 4, channel='hsanity') # High Sanity
 
@@ -877,7 +879,7 @@ init python:
 
             sanity_mod = "high"
 
-            renpy.music.set_volume(1.0, delay=delay, channel='hsanity') # High Sanity
+            renpy.music.set_volume(dynamic_music_volume, delay=delay, channel='hsanity') # High Sanity
             renpy.music.set_volume(0.0, delay=delay * 4, channel='lsanity') # Low Sanity
             renpy.music.set_volume(0.0, delay=delay * 4, channel='msanity') # Medium Sanity
 
@@ -1035,7 +1037,7 @@ init python:
         renpy.show("yandereblack", layer="yblack", at_list=[transparent(1.0 - (sanity / 100))])
 
 
-# Atmosphere Releated Functions
+# Atmosphere Related Functions
 init python:
 
     def change_atmosphere(prefix, amount, force=False):
@@ -1177,7 +1179,7 @@ init python:
         return None
 
 
-# Police Suspicion Releated Functions
+# Police Suspicion Related Functions
 init python:
 
     def change_suspicion(prefix, amount): # This function changes the suspicion percentage of the police.
@@ -1229,7 +1231,7 @@ init python:
             pass
 
 
-# This function is the cardiograph behind the sanity percentage. It changes its speed and color depending on the sanity varible.
+# This function is the cardiograph behind the sanity percentage. It changes its speed and color depending on the sanity variable.
 init python:
 
     import math

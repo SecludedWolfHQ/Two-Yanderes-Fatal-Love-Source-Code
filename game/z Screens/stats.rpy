@@ -58,9 +58,9 @@ init python:
         elif suspended is False:
             lines.append(stats_destiny_texts["suspended_false"])
 
-        if caught == "blood":
+        if is_caught == "blood":
             lines.append(stats_destiny_texts["caught_blood"])
-        elif caught == "insane":
+        elif is_caught == "insane":
             lines.append(stats_destiny_texts["caught_insane"])
 
         if cat_akira_approved is True:
@@ -80,7 +80,7 @@ init python:
 
         done_keys = (
             ("suspended", suspended),
-            ("caught", caught),
+            ("caught", is_caught),
             ("police", police_suspect),
             ("destroy", destroy_completely),
         )

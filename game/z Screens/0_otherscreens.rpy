@@ -173,19 +173,19 @@ screen destiny():
         xalign 0.5
         yalign 0.55
 
-        if destroy_completely == None and police_suspect == None and cat_akira_approved == None and suspended == None and caught == None:
+        if destroy_completely == None and police_suspect == None and cat_akira_approved == None and suspended == None and is_caught == None:
             text _("{color=#959595}No Important Events")
 
         vbox:
 
             if suspended == True:
-                text _("- Akira and [player] have been temporarly suspended from school.")
+                text _("- Akira and [player] have been temporarily suspended from school.")
             elif suspended == False:
                 text _("- Akira and [player] managed to avoid getting suspended from school.")
 
-            if caught == "blood":
+            if is_caught == "blood":
                 text _("- Akira and [player] were caught by the guidance counselor covered in blood.")
-            elif caught == "insane":
+            elif is_caught == "insane":
                 text _("- Akira and [player] were caught by the guidance counselor insane.")
 
             if cat_akira_approved == True:
@@ -200,13 +200,13 @@ screen destiny():
 
 
             if suspended == "truedone":
-                text _("{color=#959595}- Akira and [player] have been temporarly suspended from school. (Done)")
+                text _("{color=#959595}- Akira and [player] have been temporarily suspended from school. (Done)")
             elif suspended == "falsedone":
                 text _("{color=#959595}- Akira and [player] managed to avoid getting suspended from school. (Done)")
 
-            if caught == "blood_done":
+            if is_caught == "blood_done":
                 text _("{color=#959595}- Akira and [player] were caught by the guidance counselor covered in blood. (Done)")
-            elif caught == "insane_done":
+            elif is_caught == "insane_done":
                 text _("{color=#959595}- Akira and [player] were caught by the guidance counselor insane. (Done)")
 
             if police_suspect == "truedone":
@@ -274,3 +274,6 @@ screen credits_screen():
         xalign 0.5
         yalign 0.5
         at credits_scroll
+
+screen copyright_notice():
+    text _("{size=15}Copyright (c) 2026 SecludedWolf Interactive. All rights reserved.") xalign 0.5 yalign 0.97

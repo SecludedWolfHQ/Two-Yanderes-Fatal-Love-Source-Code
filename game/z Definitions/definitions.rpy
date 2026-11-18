@@ -161,7 +161,7 @@ default persistent.save_suspended = None
 default destroy_completely = None
 default police_suspect = None
 default cat_akira_approved = None
-default caught = None
+default is_caught = None
 default counselor_answer = None
 default suspended = None
 
@@ -226,7 +226,7 @@ define config.has_voice = False
 
 define config.name = _("Two Yanderes & Fatal Love")
 define gui.show_name = False
-define config.version = "3.4.4"
+define config.version = "3.4.6"
 
 define config.image_cache_size_mb = 512
 define config.gl2 = True

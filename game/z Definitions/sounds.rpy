@@ -1,6 +1,7 @@
 # This section defines all background music tracks used in the game.
 
 default current_dynamic_music = None
+default dynamic_music_volume = 1.0
 
 # Incompetech
 define thatzenmoment = "<loop 5.019>audio/music/Incompetech/That Zen Moment.opus"
@@ -52,6 +53,13 @@ init python:
     global sanity
     global atmosphere
     global ignore_atm
+
+    def set_dynamic_music_volume(value):
+
+        global dynamic_music_volume
+
+        dynamic_music_volume = value
+        sanity_mode(sanity_mod, 0)
 
     def play_music(musicname, fadein=0):
 

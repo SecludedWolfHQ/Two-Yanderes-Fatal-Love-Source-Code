@@ -26,6 +26,11 @@ label easter_egg_trigger:
 
 label after_load:
 
+    # Preserve story state from saves made before the caught variable was renamed.
+    if caught in (None, "blood", "insane", "blood_done", "insane_done"):
+        $ is_caught = caught
+        $ caught = "audio/sfx/SecludedWolf/Caught.opus"
+
     if persistent.lock_atmosphere_level:
         $ set_atmosphere(persistent.locked_atmosphere_percentage)
 

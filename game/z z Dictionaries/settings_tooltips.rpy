@@ -91,7 +91,7 @@ init python:
 
             "Sky Color Info": {
                 "Türkçe": "Okuldayken gökyüzünün rengini değiştirir. Gökyüzü okul dışında her zaman mavi olacaktır.",
-                "English": "Adjustes the color of the sky at school. The sky will always be blue outside of the school.",
+                "English": "Adjusts the color of the sky at school. The sky will always be blue outside of the school.",
                 "Español": "Ajusta el color del cielo en el instituto. Fuera del instituto, el cielo siempre será azul.",
                 "Russian": "Настраивает цвет неба в школе. За пределами школы небо всегда будет голубым.",
             },
@@ -149,10 +149,10 @@ init python:
 
             # Language Settings
             "Non-Native Language Warning": {
-                "Türkçe": "Bu çeviri ana dili konuşurları tarafından incelenmemiştir, bu nedenle bazı yerlerde hatalar olabilir.",
-                "English": "This translation has not been reviewed by native speakers, so some parts may contain errors.",
-                "Español": "Esta traducción no ha sido revisada por hablantes nativos, por lo que algunas partes pueden contener errores.",
-                "Russian": "Этот перевод не проверялся носителями языка, поэтому в некоторых местах могут быть ошибки.",
+                "Türkçe": "Bu çeviri yapay zeka desteğiyle yapılmış ve ana dili konuşurları tarafından incelenmemiştir, bu nedenle bazı yerlerde hatalar olabilir.",
+                "English": "This translation was made with the assistance of AI and has not been reviewed by native speakers, so some parts may contain errors.",
+                "Español": "Esta traducción se ha realizado con ayuda de IA y no ha sido revisada por hablantes nativos, por lo que algunas partes pueden contener errores.",
+                "Russian": "Этот перевод выполнен с помощью ИИ и не проверялся носителями языка, поэтому в некоторых местах могут быть ошибки.",
             },
         },
 
@@ -160,7 +160,7 @@ init python:
 
             # General Settings
             "Display Window": {
-                "Türkçe": "Beni alta alabileceğin küçük bir kutu içinde tut... Ama ben hala burada, izliyor olacağım.",
+                "Türkçe": "Beni alta alabileceğin küçük bir kutu içinde tut... Ama ben hâlâ burada, izliyor olacağım.",
                 "English": "Keep me in a little box, where you can minimize me... but I'll still be here. Watching.",
                 "Español": "Guárdame en una cajita que puedas minimizar... pero seguiré aquí. Mirando.",
                 "Russian": "Держи меня в маленьком окошке, которое можно свернуть... Но я всё равно останусь здесь. И буду наблюдать.",
@@ -303,10 +303,10 @@ init python:
 
             # Language Settings
             "Non-Native Language Warning": {
-                "Türkçe": "Bu çeviri ana dili konuşurları tarafından incelenmemiştir, bu nedenle bazı yerlerde hatalar olabilir.",
-                "English": "This translation has not been reviewed by native speakers, so some parts may contain errors.",
-                "Español": "Esta traducción no ha sido revisada por hablantes nativos, por lo que algunas partes pueden contener errores.",
-                "Russian": "Этот перевод не проверялся носителями языка, поэтому в некоторых местах могут быть ошибки.",
+                "Türkçe": "Bu çeviri yapay zeka desteğiyle yapılmış ve ana dili konuşurları tarafından incelenmemiştir, bu nedenle bazı yerlerde hatalar olabilir.",
+                "English": "This translation was made with the assistance of AI and has not been reviewed by native speakers, so some parts may contain errors.",
+                "Español": "Esta traducción se ha realizado con ayuda de IA y no ha sido revisada por hablantes nativos, por lo que algunas partes pueden contener errores.",
+                "Russian": "Этот перевод выполнен с помощью ИИ и не проверялся носителями языка, поэтому в некоторых местах могут быть ошибки.",
             },
         },
     }

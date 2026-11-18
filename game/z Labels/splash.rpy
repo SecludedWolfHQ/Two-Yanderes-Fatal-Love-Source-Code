@@ -57,12 +57,12 @@ label splashscreen:
         "Blood and violence are present, but are usually conveyed through narration rather than shown directly.{fast}"
 
         $ lock_dismiss()
-        "{cps=30}By continuing, you confirm that you are at least 13 years old, accepted our {a=https://secludedwolfhq.wordpress.com/privacy-policy/}{color=#1E90FF}Privacy Policy{/a}{/color} and {a=https://secludedwolfhq.wordpress.com/terms-of-use/}{color=#1E90FF}Terms of Use{/a}{/color} and consent to experiencing unsettling narrative content.{nw}"
+        "{cps=30}By continuing, you confirm that you are at least 13 years old, accepted our {a=https://secludedwolfhq.wordpress.com/privacy-policy/}{color=#1E90FF}Privacy Policy{/color}{/a} and {a=https://secludedwolfhq.wordpress.com/terms-of-use/}{color=#1E90FF}Terms of Use{/color}{/a} and consent to experiencing unsettling narrative content.{nw}"
         $ unlock_dismiss()
 
         menu:
 
-            "By continuing, you confirm that you are at least 13 years old, accepted our {a=https://secludedwolfhq.wordpress.com/privacy-policy/}{color=#1E90FF}Privacy Policy{/a}{/color} and {a=https://secludedwolfhq.wordpress.com/terms-of-use/}{color=#1E90FF}Terms of Use{/a}{/color} and consent to experiencing unsettling narrative content.{fast}"
+            "By continuing, you confirm that you are at least 13 years old, accepted our {a=https://secludedwolfhq.wordpress.com/privacy-policy/}{color=#1E90FF}Privacy Policy{/color}{/a} and {a=https://secludedwolfhq.wordpress.com/terms-of-use/}{color=#1E90FF}Terms of Use{/color}{/a} and consent to experiencing unsettling narrative content.{fast}"
 
             "I Agree":
 
@@ -280,6 +280,7 @@ label entry:
 
     play music config.main_menu_music
     scene night
+    show screen copyright_notice
     show logos with fff_
 
     $ renpy.pause(2.0, hard=True)
@@ -308,6 +309,8 @@ label entry:
     $ renpy.pause(3.5, hard=True)
 
     hide text with fff_
+
+    hide screen copyright_notice
 
     if persistent.entry_seen and not persistent.yandere_menu_enabled == "easteregg":
         $ config.allow_skipping = True
